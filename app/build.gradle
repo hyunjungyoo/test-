@@ -28,10 +28,7 @@ android {
 // Add Jacoco
     apply plugin: 'jacoco'
 
-    debug {
-        testCoverageEnabled = true
-    }
-    /*task jacocoTestReport(type: jacocoTestReport, dependsOn: "testDebug") {
+    task jacocoTestReport(type: jacocoTestReport, dependsOn: "testDebug") {
         group = "Reporting"
         description = "Generate Jacoco coverage after running tests."
         reports {
@@ -49,6 +46,6 @@ android {
             testDebug.reports.junitxml.enabled = false
         }
     } // end of ADD jacoco
-*/
+
 }
 
